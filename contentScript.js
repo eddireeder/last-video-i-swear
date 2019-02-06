@@ -21,11 +21,22 @@ function computeSecondsRemaining() {
   return (timeToSeconds(timeDuration) - timeToSeconds(timeCurrent));
 }
 
-// EITHER:
-// Place a backdrop behind video that is slightly dark and doesn't allow clicking
-// OR:
-// Force the video into fullscreen
-// I will attempt the first one, since it allows the user to choose their prefered way of watching a video
+// Give video player a z-index (higher than backdrop)
+let elements = document.getElementsByClassName('ytd-watch-flexy');
+for (element of elements) {
+  if (element.id == 'player') {
+    element.style.zIndex = '10001';
+  }
+}
+
+// Add backdrop to page
+let backdrop = document.createElement('DIV');
+backdrop.style.position = 'fixed';
+backdrop.style.zIndex = '10000';
+backdrop.style.width = '100%';
+backdrop.style.height = '100%';
+backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+document.body.appendChild(backdrop);
 
 // Constantly check for 'ended-mode' class
 let interval = setInterval(function() {
