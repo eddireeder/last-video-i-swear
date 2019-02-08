@@ -1,9 +1,32 @@
 body {
-  height: 10rem;
+  height: 8rem;
   width: 10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bottom {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
-  width: 2rem;
-  height: 2rem;
+  position: relative;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  background-color: #3dd28d;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  outline: none;
+  top: 0;
+  transition: 0.1s;
+}
+
+button.enabled:hover {
+  top: -0.1rem;
+  cursor: pointer;
 }
