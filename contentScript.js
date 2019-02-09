@@ -20,8 +20,10 @@ document.body.appendChild(backdrop);
 // Inform background script should video end
 let interval = setInterval(function() {
   if (document.getElementsByClassName('ended-mode').length > 0) {
-    clearInterval(interval);
-    chrome.runtime.sendMessage({event: 'video-ended'});
+    if (document.getElementsByClassName('ad-showing').length == 0) {
+      clearInterval(interval);
+      chrome.runtime.sendMessage({event: 'video-ended'});
+    }
   }
 }, 500);
 
