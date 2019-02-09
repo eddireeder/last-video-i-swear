@@ -17,10 +17,15 @@ backdrop.style.height = '100%';
 backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
 document.body.appendChild(backdrop);
 
-// Constantly check for 'ended-mode' class
+// Inform background script should video end
 let interval = setInterval(function() {
   if (document.getElementsByClassName('ended-mode').length > 0) {
     clearInterval(interval);
-    chrome.runtime.sendMessage({});
+    chrome.runtime.sendMessage({event: 'video-ended'});
   }
 }, 500);
+
+// Inform background script should user redirect
+onbeforeunload = function() {
+  chrome.runtime.sendMessage({event: 'user-redirected'});
+};
