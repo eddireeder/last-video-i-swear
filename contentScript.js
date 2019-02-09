@@ -1,10 +1,12 @@
-// Give video player a z-index (higher than backdrop)
-let elements = document.getElementsByClassName('ytd-watch-flexy');
-for (element of elements) {
-  if (element.id == 'player') {
-    element.style.zIndex = '10001';
-  }
+function addStyleString(string) {
+  let node = document.createElement('style');
+  node.innerHTML = string;
+  document.body.appendChild(node);
 }
+
+// Give video player a z-index (higher than backdrop)
+addStyleString('ytd-player { position: relative }');
+addStyleString('ytd-player { z-index: 10001 }');
 
 // Add backdrop to page
 let backdrop = document.createElement('DIV');
