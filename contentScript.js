@@ -14,8 +14,13 @@ backdrop.style.position = 'fixed';
 backdrop.style.zIndex = '10000';
 backdrop.style.width = '100%';
 backdrop.style.height = '100%';
-backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+backdrop.style.transition = '5s';
+backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 document.body.appendChild(backdrop);
+// Darken backdrop
+window.setTimeout(function() {
+  backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+}, 100);
 
 // Inform background script should video end
 let interval = setInterval(function() {
