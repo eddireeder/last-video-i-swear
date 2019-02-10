@@ -17,8 +17,6 @@ function setEnabled() {
 // Check whether tab is enabled
 chrome.storage.sync.get('enabled', function(data) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    console.log(data);
-    console.log(tabs);
     if (data.enabled.includes(tabs[0].id)) {
       setEnabled();
     } else {
