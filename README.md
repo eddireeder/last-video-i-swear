@@ -10,4 +10,6 @@ The extension, when activated, will darken the area around your YouTube video an
 
 ---
 
-<img align="centre" width="100%" src="https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif">
+<p align="center">
+  <img src="https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif">
+</p>
