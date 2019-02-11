@@ -1,5 +1,7 @@
 # Last Video I Swear
 
+[[ https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif | align = right ]]
+
 <div align="left">
 <p>
 Last Video I Swear is a chrome extension designed to halt an endless YouTube binge - for when you should be working 📖, or finally going to sleep 💤.
@@ -9,6 +11,4 @@ The extension, when activated, will darken the area around your YouTube video an
 </p>
 </div>
 
-<div align="right">
 ![](https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif)
-</div>
