@@ -1,6 +1,6 @@
 # Last Video I Swear
 
-<img align="right" src="https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif" height="400px">
+<img align="right" src="https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif" height="300px">
 
 <div align="left">
 <p>
