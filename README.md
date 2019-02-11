@@ -1,6 +1,6 @@
 # Last Video I Swear
 
-[[ https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif | align = right ]]
+[[ https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif | height = 100px ]]
 
 <div align="left">
 <p>
