@@ -11,4 +11,4 @@ The extension, when activated, will darken the area around your YouTube video an
 </p>
 </div>
 
-![](https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif)
+![Hello](https://media.giphy.com/media/lp14dAQGVDsrAojjTU/giphy.gif)
